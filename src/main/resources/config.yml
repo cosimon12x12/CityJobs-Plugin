@@ -1,0 +1,218 @@
+# ==========================================================
+# CityJobs Production Configuration (Paper 1.21.11)
+# All prices, work areas, spawns, and settings are dynamic.
+# Use /jobsadmin reload to apply changes immediately.
+# ==========================================================
+
+settings:
+  minimum-job-duration: 600
+  sell-cooldown: 2
+  require-job-to-sell: true
+  restrict-outside-area: true
+  teleport-to-job-spawn-on-death: true
+  exp-per-resource: 5.0
+  base-level-up-exp: 100.0
+
+economy:
+  currency-symbol: "$"
+
+jobs:
+  lumberjack:
+    display-name: "Lumberjack"
+    description: "Harvest logs and wood inside the designated forest area."
+    prices:
+      # Standard & Overworld Woods
+      OAK_LOG: 5.0
+      OAK_WOOD: 5.0
+      STRIPPED_OAK_LOG: 5.5
+      STRIPPED_OAK_WOOD: 5.5
+      SPRUCE_LOG: 6.0
+      SPRUCE_WOOD: 6.0
+      STRIPPED_SPRUCE_LOG: 6.5
+      STRIPPED_SPRUCE_WOOD: 6.5
+      BIRCH_LOG: 4.0
+      BIRCH_WOOD: 4.0
+      STRIPPED_BIRCH_LOG: 4.5
+      STRIPPED_BIRCH_WOOD: 4.5
+      JUNGLE_LOG: 6.0
+      JUNGLE_WOOD: 6.0
+      STRIPPED_JUNGLE_LOG: 6.5
+      STRIPPED_JUNGLE_WOOD: 6.5
+      ACACIA_LOG: 6.0
+      ACACIA_WOOD: 6.0
+      STRIPPED_ACACIA_LOG: 6.5
+      STRIPPED_ACACIA_WOOD: 6.5
+      DARK_OAK_LOG: 8.0
+      DARK_OAK_WOOD: 8.0
+      STRIPPED_DARK_OAK_LOG: 8.5
+      STRIPPED_DARK_OAK_WOOD: 8.5
+      MANGROVE_LOG: 7.0
+      MANGROVE_WOOD: 7.0
+      STRIPPED_MANGROVE_LOG: 7.5
+      STRIPPED_MANGROVE_WOOD: 7.5
+      MANGROVE_ROOTS: 3.0
+      CHERRY_LOG: 8.0
+      CHERRY_WOOD: 8.0
+      STRIPPED_CHERRY_LOG: 8.5
+      STRIPPED_CHERRY_WOOD: 8.5
+      PALE_OAK_LOG: 9.0
+      PALE_OAK_WOOD: 9.0
+      STRIPPED_PALE_OAK_LOG: 9.5
+      STRIPPED_PALE_OAK_WOOD: 9.5
+      # Nether Stems & Hyphae
+      CRIMSON_STEM: 9.0
+      CRIMSON_HYPHAE: 9.0
+      STRIPPED_CRIMSON_STEM: 9.5
+      STRIPPED_CRIMSON_HYPHAE: 9.5
+      WARPED_STEM: 9.0
+      WARPED_HYPHAE: 9.0
+      STRIPPED_WARPED_STEM: 9.5
+      STRIPPED_WARPED_HYPHAE: 9.5
+
+  miner:
+    display-name: "Miner"
+    description: "Extract ores and minerals inside the designated quarry."
+    prices:
+      # All Standard & Deepslate Ores
+      COAL_ORE: 4.0
+      DEEPSLATE_COAL_ORE: 5.0
+      IRON_ORE: 10.0
+      DEEPSLATE_IRON_ORE: 12.0
+      GOLD_ORE: 15.0
+      DEEPSLATE_GOLD_ORE: 18.0
+      COPPER_ORE: 6.0
+      DEEPSLATE_COPPER_ORE: 7.0
+      REDSTONE_ORE: 8.0
+      DEEPSLATE_REDSTONE_ORE: 10.0
+      LAPIS_ORE: 12.0
+      DEEPSLATE_LAPIS_ORE: 14.0
+      DIAMOND_ORE: 30.0
+      DEEPSLATE_DIAMOND_ORE: 35.0
+      EMERALD_ORE: 45.0
+      DEEPSLATE_EMERALD_ORE: 55.0
+      NETHER_GOLD_ORE: 10.0
+      NETHER_QUARTZ_ORE: 9.0
+      ANCIENT_DEBRIS: 100.0
+      # Mined Mineral Drops & Ingots
+      COAL: 3.0
+      RAW_IRON: 8.0
+      IRON_INGOT: 10.0
+      RAW_GOLD: 12.0
+      GOLD_INGOT: 15.0
+      GOLD_NUGGET: 1.5
+      RAW_COPPER: 4.0
+      COPPER_INGOT: 6.0
+      REDSTONE: 2.5
+      LAPIS_LAZULI: 3.5
+      DIAMOND: 50.0
+      EMERALD: 65.0
+      QUARTZ: 4.5
+      NETHERITE_SCRAP: 110.0
+
+  farmer:
+    display-name: "Farmer"
+    description: "Cultivate and harvest crops inside the designated agricultural zone."
+    prices:
+      WHEAT: 4.0
+      WHEAT_SEEDS: 1.0
+      CARROT: 3.0
+      POTATO: 3.0
+      POISONOUS_POTATO: 1.0
+      BEETROOT: 5.0
+      BEETROOT_SEEDS: 1.5
+      MELON: 5.0
+      MELON_SLICE: 1.5
+      MELON_SEEDS: 1.0
+      PUMPKIN: 5.5
+      CARVED_PUMPKIN: 6.0
+      PUMPKIN_SEEDS: 1.0
+      SUGAR_CANE: 4.0
+      COCOA_BEANS: 4.5
+      NETHER_WART: 6.0
+      SWEET_BERRIES: 3.5
+      GLOW_BERRIES: 4.5
+      BAMBOO: 2.0
+      CACTUS: 3.5
+      RED_MUSHROOM: 4.0
+      BROWN_MUSHROOM: 4.0
+      RED_MUSHROOM_BLOCK: 5.0
+      BROWN_MUSHROOM_BLOCK: 5.0
+      MUSHROOM_STEM: 4.5
+      CHORUS_FRUIT: 7.0
+      KELP: 2.0
+      TORCHFLOWER: 8.0
+      PITCHER_PLANT: 8.0
+
+areas:
+  lumberjack:
+    enabled: false
+    world: "world"
+    x1: 0
+    y1: 0
+    z1: 0
+    x2: 0
+    y2: 0
+    z2: 0
+  miner:
+    enabled: false
+    world: "world"
+    x1: 0
+    y1: 0
+    z1: 0
+    x2: 0
+    y2: 0
+    z2: 0
+  farmer:
+    enabled: false
+    world: "world"
+    x1: 0
+    y1: 0
+    z1: 0
+    x2: 0
+    y2: 0
+    z2: 0
+
+spawns:
+  lumberjack:
+    enabled: false
+    world: "world"
+    x: 0.0
+    y: 64.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  miner:
+    enabled: false
+    world: "world"
+    x: 0.0
+    y: 64.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  farmer:
+    enabled: false
+    world: "world"
+    x: 0.0
+    y: 64.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+
+messages:
+  prefix: "&8[&6CityJobs&8] &r"
+  no-permission: "&cYou do not have permission to execute this command."
+  player-only: "&cThis command can only be executed by a player."
+  job-joined: "&aYou have joined the &e%job% &ajob! You must remain in this job for at least 10 minutes before leaving."
+  job-already-in: "&cYou are already working as a &e%job%&c."
+  job-already-has-other: "&cYou already have an active job (&e%job%&c). Use &e/job quit &cafter your minimum duration expires."
+  job-none: "&cYou do not currently have an active job. Use &e/job &cto choose one."
+  job-quit-success: "&aYou have left the &e%job% &ajob."
+  job-quit-cooldown: "&cYou cannot leave or switch your job yet! Time remaining: &e%time%&c."
+  outside-work-area: "&cYou can only harvest &e%job% &cresources inside the designated &e%job% &cwork area!"
+  wrong-job-resource: "&cThis resource belongs to the &e%required_job% &cjob. Your current job does not permit harvesting it here."
+  sell-wrong-job: "&cYou must be working as a &e%job% &cto use this sell command!"
+  sell-cooldown: "&cPlease wait &e%seconds%s &cbefore selling items again."
+  sell-empty: "&cYou do not have any sellable &e%job% &cresources in your inventory."
+  sell-success: "&aSold &e%amount% &aitems for &2%currency%%total%&a!"
+  sell-error: "&cTransaction failed through the economy provider. Your items were not removed."
+  reload-success: "&aConfiguration and dynamic material prices reloaded successfully."

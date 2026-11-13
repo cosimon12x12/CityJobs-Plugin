@@ -1,0 +1,39 @@
+name: CityJobs
+version: '${project.version}'
+main: com.cityjobs.CityJobsPlugin
+api-version: '1.21'
+authors: [CityJobsArchitect]
+description: Professional jobs, designated work areas, and Vault economy integration plugin.
+softdepend: [Vault, Essentials]
+
+commands:
+  job:
+    description: Manage your active job, view job details, and check statistics.
+    usage: /job [join|quit|info|stats]
+    permission: cityjobs.use
+  sellwood:
+    description: Sell all configured lumberjack wood items in your inventory.
+    usage: /sellwood
+    permission: cityjobs.use
+  sellmines:
+    description: Sell all configured miner ores and minerals in your inventory.
+    usage: /sellmines
+    permission: cityjobs.use
+  sellfarm:
+    description: Sell all configured farmer crops and harvestables in your inventory.
+    usage: /sellfarm
+    permission: cityjobs.use
+  jobsadmin:
+    description: Administrative command suite for CityJobs configuration and management.
+    usage: /jobsadmin <reload|setspawn|pos1|pos2|createarea|setprice|info>
+    permission: cityjobs.admin
+
+permissions:
+  cityjobs.use:
+    description: Allows players to join jobs, view stats, and sell job resources.
+    default: true
+  cityjobs.admin:
+    description: Grants access to all CityJobs administrative commands and region bypasses.
+    default: op
+    children:
+      cityjobs.use: true
